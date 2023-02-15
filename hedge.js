@@ -9,6 +9,7 @@ Promise.all([
     .then(([allDataCZL, allDataER]) => {
         const allData = getCombinedData(allDataCZL, allDataER);
         processingData(allData);
+        
     })
     .catch((error) => {
         console.error(error);
