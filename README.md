@@ -218,7 +218,7 @@ Here's a graphic for the gold price on PLN. As you can see, around august 2018, 
 
 ![](images/grams_pln.png)
 
-Here's a link to a more detailed look:
+Here's a link for a more detailed look:
 
 ```
 https://docs.google.com/spreadsheets/d/1a6fW1xegSM8oynQIW-xs52KzzxEaLbB5/edit?usp=sharing&ouid=102032123110122250160&rtpof=true&sd=true
