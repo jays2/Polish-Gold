@@ -215,11 +215,11 @@ docker images
 
 Run the images:
 ```
-docker run my-backend-imageG
+docker run my-backend-image_gold
 ```
 
 ```
-docker run my-testing-imageG
+docker run my-testing-image_gold
 ```
 ## Expected results in the last 5 years
 
