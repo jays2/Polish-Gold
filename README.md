@@ -266,6 +266,8 @@ As we can see we got a false positive in terms of the main invested currency, si
 
 In this case, an idea would be to wait for the exchange rates to lower, or sell the gold on a market with a better return on U.S. Dollars.
 
+If you have any questions feel free to contact me :)
+
 
 
 
