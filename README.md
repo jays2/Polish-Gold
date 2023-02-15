@@ -196,22 +196,31 @@ function findBestProfit(prices) {
 
 ## Installation
 
-You can create a docker container with the following commands:
+We have two docker files, one for production and other for testing.
+
+Docker.backend:
 
 ```
-docker build -t node-gold_P
+ docker build -f Dockerfile.backend -t my-backend-imageG .
+```
+Docker.tests:
+```
+ docker build -f Dockerfile.tests -t my-testing-imageG .
 ```
 
-Check if the image was built:
+Check if the images were built:
 ```
 docker images
 ```
 
-Run the image:
+Run the images:
 ```
-docker run node-gold_P
+docker run my-backend-imageG
 ```
 
+```
+docker run my-testing-imageG
+```
 ## Expected results in the last 5 years
 
 Here's a graphic for the gold price on PLN. As you can see, around august 2018, the amount of grams per invesment were the highest and around 2020 were the lowest. Which means the acquisition by a 135000 USD investment dropped. In other words, this point was the worst to buy. 
