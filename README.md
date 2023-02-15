@@ -143,11 +143,11 @@ and the merged arrays look like this:
 ]
 ```
 
-Note that a property called 'grams' is calculated, this means that for every point in time in the last 5 years, we know how many grams of gold we were able to buy, taking in consideration the gold price and exchange rate USD/PLN. 
+Note that a property called 'grams' is calculated, this means that for every point in time in the last 5 years, we know how many grams of gold we were able to buy, taking into consideration the gold price and exchange rate USD/PLN.
 
-Now the data is ready to be processed using the function 'processingData(data)', and in order to obtain the optimal dates, the 'findBestProfit(prices)' function comes into place. 
+Now the data is ready to be processed using the function 'processingData(data)', and in order to obtain the optimal dates, the 'findBestProfit(prices)' function comes into place.
 
-This is where the heart of the problem comes into place, first we sort the merged input array in ascending order by date.
+This is where the heart of the problem begins. First, we sort the merged input array in ascending order by date.
 
 Then we pivot our initial positions (buy dates) to every day until today in the last 5 years (sell date), starting from the latest date, and comparing the profits if we sold our initial investment.
 
@@ -161,7 +161,7 @@ profit =  (grams_bought * gold_price_for_every_next_day_until_today) / dollar_pr
 
 If the profit becomes larger than previous one, we assign it as the current better deal, and since this profit is correlated to a buy and sell date, we can return them if it's the highest one. 
 
-Keep in mind the profit is calculated on USD, that why we convert the polish currency obtained buy selling our grams of gold to USD.
+Keep in mind the profit is calculated on USD, that's why we convert the polish currency obtained buy selling our grams of gold to USD.
 
 This is done because we can have a profit on PLN, but not necessarily on USD. PLN could have fallen dramatically on demand and become a false positive for our investment.
 
@@ -223,7 +223,7 @@ docker run my-testing-imageG
 ```
 ## Expected results in the last 5 years
 
-Here's a graphic for the gold price on PLN. As you can see, around august 2018, the amount of grams per invesment were the highest and around 2020 were the lowest. Which means the acquisition by a 135000 USD investment dropped. In other words, this point was the worst to buy. 
+Here's a graphic for the acquisition capability for our investment in the last 5 years. As you can see, around August 2018, the number of grams per investment was the highest and around mid 2020 were the lowest. Which means the acquisition by a 135000 USD investment dropped. In other words, this point was the worst to buy. 
 
 ![](images/grams_pln.png)
 
