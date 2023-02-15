@@ -194,7 +194,7 @@ function findBestProfit(prices) {
 }
 ```
 
-## Instalation
+## Installation
 
 You can create a docker container with the following commands:
 
