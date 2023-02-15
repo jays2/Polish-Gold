@@ -201,11 +201,11 @@ We have two docker files, one for production and other for testing.
 Docker.backend:
 
 ```
- docker build -f Dockerfile.backend -t my-backend-imageG .
+ docker build -f Dockerfile.backend -t my-backend-image_gold .
 ```
 Docker.tests:
 ```
- docker build -f Dockerfile.tests -t my-testing-imageG .
+ docker build -f Dockerfile.tests -t my-testing-image_gold .
 ```
 
 Check if the images were built:
